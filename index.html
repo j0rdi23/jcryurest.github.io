@@ -1,0 +1,458 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currículum de Jordi Caravaca Rostoll</title>
+    <!-- Enlazamos Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">    
+    <style>
+        body {
+            text-align: justify;
+            text-justify: inter-word;
+        }
+
+        h1, h2, h3, h4, h5, h6 {
+            text-align: center;
+        }
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: transparent;
+            border: solid black;
+            border-width: 0 3px 3px 0;
+            display: inline-block;
+            padding: 10px;
+        }
+
+        .carousel-control-prev-icon {
+            transform: rotate(135deg);
+            -webkit-transform: rotate(135deg);
+        }
+
+        .carousel-control-next-icon {
+            transform: rotate(-45deg);
+            -webkit-transform: rotate(-45deg);
+        }
+        .card {
+            transition: transform 0.6s;
+            transform-style: preserve-3d;
+            cursor: pointer;
+            overflow: hidden;
+            position: relative;
+        }
+        .card .card-back {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            backface-visibility: hidden;
+            transform: rotateY(180deg);
+            -webkit-transform: rotateY(180deg);
+            padding: 20px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            background-color: #f7f7f7;
+        }
+
+        .card.flip .card-back {
+            transform: rotateY(0deg);
+            -webkit-transform: rotateY(0deg);
+        }
+    
+        #habilitiesCarousel .carousel-control-prev, #habilitiesCarousel .carousel-control-next {
+            width: 5%;
+        }
+         
+        </style>
+
+
+<div class="container mt-5">
+    <!-- Bloque de perfil -->
+    <div class="row mb-5" style="background-color: #f7f7f7; padding: 20px; border-radius: 10px;">
+        <div class="col-md-4 text-center">
+            <img src="img.jpeg" alt="Foto de Jordi" class="img-fluid mb-3" style="border-radius: 0;">
+            <a href="ruta_a_tu_CV.pdf" class="btn btn-dark" download>Descargar CV</a>
+        </div>
+        <div class="col-md-8">
+            <h1>Jordi Caravaca Rostoll</h1>
+            <p class="lead">"Científico de datos apasionado por la innovación y la tecnología."</p>
+            <p><i class="fa fa-map-marker" aria-hidden="true"></i> Valencia, Comunidad Valenciana, España</p>
+            <p><i class="fa fa-graduation-cap"></i> Grado en Ciencia de Datos por la Universitat Politécnica de Valencia</p>
+            <p><i class="fa fa-envelope"></i> jordicaravaca123@gmail.com</p>
+            <p><i class="fa fa-linkedin" aria-hidden="true"></i> <a href="https://www.linkedin.com/in/jordi-caravaca-7737b31a1/" target="_blank">Perfil de LinkedIn</a></p>
+        </div>
+    </div>
+
+<!-- Bloque de habilidades -->
+<h2 class="mb-4" style="background-color: #f7f7f7; padding: 10px;">Habilidades</h2>
+<div id="habilitiesCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Primer grupo de habilidades -->
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Python -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fab fa-python fa-6x"></i>
+                            <h5 class="card-title">Python</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Python</h5>
+                            <p>Explicación detallada sobre Python y sus aplicaciones en el mundo del desarrollo y la ciencia de datos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Machine Learning -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-brain fa-6x"></i>
+                            <h5 class="card-title">Machine Learning</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Machine Learning</h5>
+                            <p>Explicación detallada sobre Machine Learning, sus algoritmos y cómo se aplica en diferentes industrias.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Big Data -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fa fa-database fa-6x"></i>
+                            <h5 class="card-title">Big Data</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Big Data</h5>
+                            <p>Explicación detallada sobre Big Data, su importancia en la era digital y cómo se procesan grandes volúmenes de datos.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Segundo grupo de habilidades -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Análisis Estadístico -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-bar fa-6x"></i>
+                            <h5 class="card-title">Análisis Estadístico</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Análisis Estadístico</h5>
+                            <p>Uso de técnicas estadísticas para interpretar, describir y visualizar datos.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Programación en R -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fab fa-r-project fa-6x"></i>
+                            <h5 class="card-title">Programación en R</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Programación en R</h5>
+                            <p>Dominio del lenguaje de programación R para análisis de datos y estadísticas.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Deep Learning -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-layer-group fa-6x"></i>
+                            <h5 class="card-title">Deep Learning</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Deep Learning</h5>
+                            <p>Implementación de redes neuronales profundas para tareas avanzadas de aprendizaje automático.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Tercer grupo de habilidades -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Procesamiento de Lenguaje Natural (NLP) -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-comments fa-6x"></i>
+                            <h5 class="card-title">NLP</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Procesamiento de Lenguaje Natural (NLP)</h5>
+                            <p>Técnicas para analizar y procesar el lenguaje humano.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Visualización de Datos -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-pie fa-6x"></i>
+                            <h5 class="card-title">Visualización de Datos</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Visualización de Datos</h5>
+                            <p>Uso de herramientas como Tableau o Power BI para representar datos de manera gráfica.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Ingeniería de Características -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cogs fa-6x"></i>
+                            <h5 class="card-title">Ingeniería de Características</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Ingeniería de Características</h5>
+                            <p>Creación y selección de características relevantes para modelos de aprendizaje automático.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Cuarto grupo de habilidades -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Optimización de Modelos -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sliders-h fa-6x"></i>
+                            <h5 class="card-title">Optimización de Modelos</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Optimización de Modelos</h5>
+                            <p>Ajuste y optimización de modelos para mejorar su rendimiento.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: SQL y Bases de Datos -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-database fa-6x"></i>
+                            <h5 class="card-title">SQL y Bases de Datos</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>SQL y Bases de Datos</h5>
+                            <p>Habilidad para escribir consultas SQL y trabajar con bases de datos relacionales.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Sistemas de Recomendación -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-star fa-6x"></i>
+                            <h5 class="card-title">Sistemas de Recomendación</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Sistemas de Recomendación</h5>
+                            <p>Algoritmos diseñados para sugerir productos o contenidos a los usuarios.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+            <!-- Quinto grupo de habilidades -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Análisis de Series Temporales -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-clock fa-6x"></i>
+                            <h5 class="card-title">Análisis de Series Temporales</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Análisis de Series Temporales</h5>
+                            <p>Técnicas para analizar datos que se recogen o registran en diferentes puntos en el tiempo.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Aprendizaje Automático Supervisado -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-tags fa-6x"></i>
+                            <h5 class="card-title">Aprendizaje Automático Supervisado</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Aprendizaje Automático Supervisado</h5>
+                            <p>Uso de datos etiquetados para entrenar modelos que pueden hacer predicciones o clasificaciones.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Aprendizaje Automático No Supervisado -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-cubes fa-6x"></i>
+                            <h5 class="card-title">Aprendizaje Automático No Supervisado</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Aprendizaje Automático No Supervisado</h5>
+                            <p>Técnicas como la segmentación que no requieren datos previamente etiquetados.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sexto grupo de habilidades -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <!-- Habilidad: Redes Neuronales Convolucionales (CNN) -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-image fa-6x"></i>
+                            <h5 class="card-title">Redes Neuronales Convolucionales (CNN)</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Redes Neuronales Convolucionales (CNN)</h5>
+                            <p>Especialmente útiles para tareas de procesamiento de imágenes.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Redes Neuronales Recurrentes (RNN) -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-sync-alt fa-6x"></i>
+                            <h5 class="card-title">Redes Neuronales Recurrentes (RNN)</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Redes Neuronales Recurrentes (RNN)</h5>
+                            <p>Ideales para secuencias de datos como series temporales o lenguaje natural.</p>
+                        </div>
+                    </div>
+                </div>
+                <!-- Habilidad: Optimización Bayesiana -->
+                <div class="col-md-4">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <i class="fas fa-chart-line fa-6x"></i>
+                            <h5 class="card-title">Optimización Bayesiana</h5>
+                        </div>
+                        <div class="card-back">
+                            <h5>Optimización Bayesiana</h5>
+                            <p>Uso de técnicas bayesianas para optimizar hiperparámetros de modelos de aprendizaje automático.</p> 
+                
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+ 
+    <a class="carousel-control-prev" href="#habilitiesCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#habilitiesCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+<br>  
+<!-- Bloque de Experiencia Laboral -->
+<h2 class="mb-4" style="background-color: #f7f7f7; padding: 10px;">Experiencia Laboral</h2>
+<div id="experienceCarousel" class="carousel slide" data-ride="carousel">
+    <div class="carousel-inner">
+        <!-- Primera experiencia -->
+        <div class="carousel-item active">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="vrain.png" class="d-block w-100 mb-2" alt="Imagen 1">
+                    <h3>DATA SCIENTIST - VRAIN</h3>
+                    <p>octubre22 - julio23</p>
+                    <p>Durante mi periodo de formación en el Instituto de Inteligencia Artificial de Valencia, tuve la oportunidad de sumergirme en un proyecto innovador centrado en el desarrollo de un asistente acompañante para personas mayores. Mi papel en este proyecto fue crucial, ya que me encargué de diseñar y desarrollar el agente BDI (Belief-Desire-Intention) con capacidades de razonamiento y un componente afectivo. Esta experiencia me permitió colaborar estrechamente con un equipo multidisciplinario, asegurando que el asistente pudiera comprender y responder adecuadamente a las necesidades y emociones de las personas mayores, proporcionando un apoyo adaptado y personalizado.</p>
+
+                    <p>En el contexto de este proyecto, mi Trabajo de Fin de Grado (TFG) se convirtió en una pieza fundamental. Mi investigación se centró en la representación computacional de las emociones y cómo estas pueden ser modeladas en agentes inteligentes, teniendo en cuenta las diferencias culturales en su percepción y expresión. A través de encuestas dirigidas a hablantes nativos de español, portugués y sueco, pude analizar y entender las variaciones en la interpretación y manifestación de emociones entre diferentes culturas. Esta investigación no solo proporcionó insights valiosos sobre la percepción emocional, sino que también sentó las bases para el desarrollo de modelos probabilísticos que podrían adaptarse a diferentes entornos lingüísticos y culturales.</p>
+                        
+                    <p>Con estos modelos en mano, procedí a implementar un sistema avanzado de agentes inteligentes en Python, utilizando el lenguaje de programación de agentes AgentSpeak. Esta implementación se benefició enormemente de las funcionalidades afectivas de GenIA3, permitiendo que el agente interactuara de manera personalizada según el contexto cultural en el que se encontrara.</p>
+                </div>
+            </div>
+        </div>
+        <!-- Segunda experiencia -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="upv.png" class="d-block w-100 mb-2" alt="Imagen 2">
+                    <h3>DATA SCIENTIST - ETSII</h3>
+                    <p>enero23 - julio23</p>
+                    <p>Durante mi periodo de prácticas en la dirección de la Escuela Técnica de Ingeniería Industrial, tuve la responsabilidad de desempeñar un papel crucial en el análisis y gestión de datos de la universidad. Esta experiencia me brindó la oportunidad de sumergirme profundamente en el mundo de la analítica y la toma de decisiones basada en datos.</p>
+
+                    <p>Mi principal tarea consistió en analizar vastas cantidades de información con el objetivo de mejorar la toma de decisiones estratégicas dentro de la institución. Para ello, utilicé herramientas avanzadas como Power BI y Python. Power BI me permitió crear visualizaciones interactivas y paneles de control que facilitaban la interpretación de los datos, mientras que Python, con sus potentes bibliotecas de análisis de datos, me ayudó a procesar y extraer información valiosa de grandes conjuntos de datos.</p>
+                        
+                    <p>A lo largo de mi contrato, trabajé estrechamente con el equipo de la dirección, lo que me permitió comprender a fondo las necesidades y objetivos específicos de la escuela. Esta colaboración fue esencial para garantizar que los análisis y visualizaciones que desarrollaba fueran relevantes y útiles para la toma de decisiones.</p>
+                        
+                    <p>Además, no solo me limité a analizar y visualizar los datos, sino que también me encargué de presentar informes detallados basados en mis hallazgos. Estos informes no solo destacaban las tendencias y patrones identificados, sino que también ofrecían recomendaciones concretas basadas en el análisis realizado. Estas recomendaciones buscaban optimizar procesos, identificar áreas de mejora y proponer estrategias innovadoras para alcanzar los objetivos de la escuela.</p>                </div>
+            </div>
+        </div>
+        <!-- Tercera experiencia -->
+        <div class="carousel-item">
+            <div class="row justify-content-center">
+                <div class="col-md-8">
+                    <img src="descarga.png" class="d-block w-100 mb-2" alt="Imagen 3">
+                    <h3>DATA SCIENTIST - YUREST SOLUTIONS</h3>
+                    <p>agosto23 - actualidad</p>
+                    <p>En mi actual posición en Yurest, desempeño un papel crucial en la innovación y automatización de procesos esenciales para la operación eficiente de los restaurantes. Mis responsabilidades y logros incluyen:</p>
+
+                    <ul>
+                        <li><strong>Automatización de Decisiones de Compra:</strong> Estoy liderando un proyecto que busca automatizar el proceso de compra para los restaurantes. A través de modelos avanzados, el sistema predice el consumo y realiza pedidos automáticamente, eliminando la necesidad de intervención manual y garantizando que los restaurantes estén siempre abastecidos según sus necesidades.</li>
+                        <li><strong>Planificación de Turnos Semiautomática:</strong> Estoy trabajando en un sistema de asignación de turnos que no solo considera las horas productivas sino también las horas de preparación, esenciales para garantizar un servicio de calidad. El objetivo es evolucionar este sistema hacia una asignación completamente automática que optimice la eficiencia y satisfacción del personal.</li>
+                        <li><strong>Digitalización y Comparación Automática de Albaranes:</strong> Estamos en las primeras etapas de un proyecto que utiliza tecnología OCR para leer, digitalizar y comparar automáticamente albaranes y pedidos. Esta iniciativa busca minimizar errores, ahorrar tiempo y mejorar la precisión en la gestión de inventarios.</li>
+                    </ul>
+
+                    <p>Además de mis habilidades técnicas como científico de datos, he adquirido experiencia valiosa en gestión de proyectos. Trabajo bajo el método Scrum y utilizo herramientas como Monday para garantizar que los proyectos se realicen de manera eficiente y cumplan con los objetivos establecidos.</p>
+
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <a class="carousel-control-prev" href="#experienceCarousel" role="button" data-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+    </a>
+    <a class="carousel-control-next" href="#experienceCarousel" role="button" data-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Siguiente</span>
+    </a>
+</div>
+
+
+    <!-- Otros bloques... -->
+</div>
+
+<!-- Enlazamos Bootstrap JS y dependencias -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+<script>
+    document.querySelectorAll('.card').forEach(card => {
+        card.addEventListener('click', () => {
+            card.classList.toggle('flip');
+            // Make invisible the back of the card card-body
+            card.querySelector('.card-body').classList.toggle('invisible');
+        });
+    });
+</script>
+</body>
+</html>
